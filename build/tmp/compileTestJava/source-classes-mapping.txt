@@ -1,0 +1,44 @@
+factoryRequest/RequestGET.java
+ factoryRequest.RequestGET
+basicRestAssured/CRUDProjectToken.java
+ basicRestAssured.CRUDProjectToken
+factoryRequest/RequestInformation.java
+ factoryRequest.RequestInformation
+basicRestAssured/BasicRestAssuredObject.java
+ basicRestAssured.BasicRestAssuredObject
+basicRestAssured/BasicRestAssured.java
+ basicRestAssured.BasicRestAssured
+basicRestAssured/BasicRestAssuredExternalFile.java
+ basicRestAssured.BasicRestAssuredExternalFile
+factoryRequest/RequestPUT.java
+ factoryRequest.RequestPUT
+helpers/JsonHelper.java
+ helpers.JsonHelper
+basicRestAssured/BasicRestAssuredSchema.java
+ basicRestAssured.BasicRestAssuredSchema
+runner/MyStepClean.java
+ runner.MyStepClean
+factoryRequest/IRequest.java
+ factoryRequest.IRequest
+factoryRequest/FactoryRequest.java
+ factoryRequest.FactoryRequest
+factoryRequest/RequestPOST.java
+ factoryRequest.RequestPOST
+configuration/ConfigEnvironment.java
+ configuration.ConfigEnvironment
+helpers/LocalReport.java
+ helpers.LocalReport
+runner/MyStepProject.java
+ runner.MyStepProject
+runner/MyStepdefs.java
+ runner.MyStepdefs
+runner/Runner.java
+ runner.Runner
+factoryRequest/RequestDELETE.java
+ factoryRequest.RequestDELETE
+basicRestAssured/CRUDProject.java
+ basicRestAssured.CRUDProject
+configuration/ConfigAPI.java
+ configuration.ConfigAPI
+basicJunit/BasicJunit.java
+ basicJunit.BasicJunit

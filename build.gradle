@@ -1,0 +1,70 @@
+plugins {
+    id 'java'
+}
+
+group 'restassured'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    //Rest Assured
+    testImplementation 'io.rest-assured:rest-assured:4.4.0'
+    implementation 'io.rest-assured:json-path:4.4.0'
+    implementation 'io.rest-assured:json-schema-validator:4.4.0'
+    implementation 'io.rest-assured:rest-assured-common:4.4.0'
+    implementation 'io.rest-assured:rest-assured-all:4.4.0'
+    implementation 'org.json:json:20210307'
+
+    //Cucumber
+    implementation 'io.cucumber:cucumber-java:7.1.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.1.0'
+    implementation 'net.masterthought:cucumber-reporting:5.6.1'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+// gradle cucumber -PtestSuite=@Eynar
+task cucumber() {
+    dependsOn assemble, testClasses
+    doLast {
+        javaexec {
+            main = "io.cucumber.core.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            //       -- reporte -------- ----- step definition- ---- features ----
+            args = ['--plugin', 'json:build/reports/cucumber/report.json', '--glue', 'runner', 'src/test/resources','--tags']+[testSuite]
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

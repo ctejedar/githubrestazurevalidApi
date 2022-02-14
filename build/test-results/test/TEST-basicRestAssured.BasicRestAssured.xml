@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="basicRestAssured.BasicRestAssured" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-03T01:48:00" hostname="LAPTOP-PQJTNQCA" time="2.609">
+  <properties/>
+  <testcase name="verifyCreateProject()" classname="basicRestAssured.BasicRestAssured" time="2.609"/>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	https://todo.ly/api/projects.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic amJAYXBpLmNvbToxMjM0NQ==
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+  "Content":"EynarRestAssured",
+  "Icon":5 
+}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=ivwxz402gnopnsscytiwxpu2; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 03 Dec 2021 01:45:07 GMT
+Content-Length: 406
+
+{
+    "Id": 3958607,
+    "Content": "EynarRestAssured",
+    "ItemsCount": 0,
+    "Icon": 5,
+    "ItemType": 2,
+    "ParentId": null,
+    "Collapsed": false,
+    "ItemOrder": 231,
+    "Children": [
+        
+    ],
+    "IsProjectShared": false,
+    "ProjectShareOwnerName": null,
+    "ProjectShareOwnerEmail": null,
+    "IsShareApproved": false,
+    "IsOwnProject": true,
+    "LastSyncedDateTime": "/Date(1638495907400)/",
+    "LastUpdatedDate": "/Date(1638495907383)/",
+    "Deleted": false,
+    "SyncClientCreationId": null
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
